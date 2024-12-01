@@ -5,7 +5,6 @@ INNER JOIN restStaff T2
 ON T1.waiter_no = T2.staff_no
 GROUP BY waiter_no, bill_date
 HAVING COUNT(*) >= 2;
-
 -- 2
 SELECT room_name, COUNT(*) AS num_tables
 FROM restRest_table T1
